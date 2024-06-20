@@ -15,16 +15,16 @@ function NewRecipes ({label, image, ingredients,type, cuisine, frees}){
             <h3>meal Type: {type}</h3>
         </div>
         <div className="type">
-        <ul>
             <h4>Ingredients: </h4>
+        <ul>
             {ingredients.map((ingredient, index) => (
                 <li key={index}>
                     <img src="https://img.icons8.com/?size=100&id=13902&format=png&color=000000" alt="icon" width="20px"/>
                     {ingredient}</li>
             ))}
         </ul>
+        <h4>health Labels:</h4>
         <ul>
-        <h4>health Labels</h4>
             {frees.map((free,index) => (
                 <li key={index}>
                     <img src="https://img.icons8.com/?size=100&id=13902&format=png&color=000000" alt="icon" width="20px"/>
